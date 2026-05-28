@@ -10,12 +10,13 @@ console.log('Gemini Key loaded:', process.env.GEMINI_API_KEY ? 'YES ✅' : 'NO �
 const app = express()
 const PORT = process.env.PORT || 5000
 
-app.use(cors({ origin: [
-  'http://localhost:5173',
-  'https://ai-resume-analyzer-rxfn.onrender.com'
-],
-credentials: true
- }))
+// app.use(cors({ origin: [
+//   'http://localhost:5173',
+//   'https://ai-resume-analyzer-rxfn.onrender.com'
+// ],
+// credentials: true
+//  }))
+app.use(cors())
 app.use(express.json())
 
 app.use('/api/resume', resumeRoutes)   // ← ye add karo
