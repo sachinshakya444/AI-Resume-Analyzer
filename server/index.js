@@ -12,7 +12,7 @@ const PORT = process.env.PORT || 5000
 
 app.use(cors({ origin: [
   'http://localhost:5173',
-  'https://ai-resume-analyzer-ivory-seven.vercel.app'
+  'https://ai-resume-analyzer-rxfn.onrender.com'
 ],
 credentials: true
  }))
